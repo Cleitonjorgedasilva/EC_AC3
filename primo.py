@@ -13,6 +13,8 @@
             primos = primos + str(numero) + ","
             p+=1
         numero +=1
+        if(p%10 == 0):
+            primos = primos + '<br>'
 
     return primos
 
