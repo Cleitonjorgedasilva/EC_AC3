@@ -8,18 +8,18 @@ def primos():
     limite =  100
 
     c = 1
-    a = 1
-    numero = 2
-    primos = "0, "
+    p = 1
+    numero = 3
+    primos = "2, "
     while a < limite:
         ehprimo = 1
-        for i in range(1, numero):
+        for i in range(2, numero):
             if numero%i == 0:
                 ehprimo = 0
                 break
         if (ehprimo):
             primos = primos + str(numero) + ","
-            a+=1
+            p+=1
         numero +=1
 
     return primos
