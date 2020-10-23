@@ -1,1 +1,1 @@
-web: python primo.py
+web: python teste.py
