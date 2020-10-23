@@ -4,7 +4,8 @@ from math import sqrt
 
 app = Flask(__name__)
 @app.route('/')
-def nao_entre_em_panico():
+def primos():
+    def nao_entre_em_panico():
     limite =  100
 
     c = 1
@@ -19,10 +20,8 @@ def nao_entre_em_panico():
                 break
         if (ehprimo):
             primos = primos + str(numero) + ","
-            p+=1
+        p+=1
         numero +=1
-        if (p %10 == 0):
-            primos = primos+ "<br>" 
 
     return primos
 
